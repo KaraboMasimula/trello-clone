@@ -1,0 +1,58 @@
+<div class="container">
+
+  <div class="row mt-5">
+
+    <div class="col-md-3">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">My Boards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Collaborations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Teams</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Create</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-9">
+
+      <div>
+        <h5> <i class="far fa-star"></i> Starred Boards</h5>
+
+        <div class="row">
+          <!-- The Boards -->
+          <div class="col-md-3 mb-4" *ngFor="let board of [1,2,3,4]">
+            <div class="board border" [routerLink]="['/board/1']" >
+              <span class="board-title d-flex justify-content-center">Connekt</span>
+              <i class="board-icon far fa-star"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mt-4">
+        <h5> <i class="far fa-star"></i> All Boards</h5>
+
+        <div class="row">
+          <!-- The Boards -->
+          <div class="col-md-3 mb-4" *ngFor="let board of [1,2,3,4,5,6,7]">
+            <div class="board border">
+              <span class="board-title d-flex justify-content-center">Connekt</span>
+              <i class="board-icon far fa-star"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

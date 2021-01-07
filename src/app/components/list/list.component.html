@@ -1,0 +1,33 @@
+<div class="task-list border">
+  <div class="list-header">
+    <p>
+      <span class="">To-Do</span>
+      <span class="float-right">
+        <div class="dropdown">
+          <i class="fas fa-ellipsis-h " type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"></i>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Add Card</a>
+            <a class="dropdown-item" href="#">Delete List</a>
+            <a class="dropdown-item" href="#">Mark as important</a>
+            <a class="dropdown-item" href="#">Mark as important</a>
+          </div>
+        </div>
+      </span>
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="list-cards">
+    <div class="card-container border mb-2" *ngFor="let list of [1,2,3,4,5]">
+      <app-card></app-card>
+    </div>
+  </div>
+
+  <div class="add-card pl-3">
+    <span>
+      <i class="fas fa-plus"></i> Add another card
+    </span>
+  </div>
+
+</div>

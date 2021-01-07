@@ -1,0 +1,9 @@
+.card-container{
+    //background-color: white;
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgb(241, 241, 241);
+    }
+
+}
